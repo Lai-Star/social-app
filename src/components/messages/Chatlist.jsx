@@ -5,7 +5,7 @@ export default function Chatlist() {
     <div className="flex flex-col w-2/5 border-r-2 overflow-y-auto">
       {/* Search component */}
       <div className="border-b-2 py-4 px-2">
-        <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white float-left">
+        <h1 className="mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white float-left">
           Chats
         </h1>
         <input
