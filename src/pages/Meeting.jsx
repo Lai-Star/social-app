@@ -1,11 +1,10 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Chatdetail from '../components/messages/Chatdetail';
-import Chatlist from '../components/messages/Chatlist';
-import Messagebox from '../components/messages/Messagebox';
+import MainScreen from '../components/meeting/MainScreen';
 import Sidebar from '../components/Sidebar';
+import MeetinDetail from '../components/meeting/MeetinDetail';
 
-export default function Chat() {
+export default function Meeting() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
@@ -18,15 +17,11 @@ export default function Chat() {
         <Sidebar />
         {/* End Left Sidebar */}
 
-        {/* Chat list */}
-        <Chatlist />
-        {/* End Chat list */}
+        {/* Meeting Main Screen */}
+        <MainScreen />
+        {/* End Meeting Main Screen */}
 
-        {/* Message */}
-        <Messagebox />
-        {/* End Message */}
-
-        <Chatdetail />
+        <MeetinDetail />
       </div>
     </div>
   );

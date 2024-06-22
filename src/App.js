@@ -1,10 +1,10 @@
 import './App.css';
-import Chat from './pages/Chat';
+import AppRoute from './AppRoute';
 
 function App() {
   return (
     <div className="App">
-      <Chat />
+      <AppRoute />
     </div>
   );
 }
