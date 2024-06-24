@@ -3,20 +3,27 @@ import PropTypes from 'prop-types';
 
 export default function ProfileCard({ name, description, avatar }) {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-black bg-opacity-75 p-5">
-      <div className="relative z-10 ml-5">
-        <div className="flex items-center space-x-4">
-          <img className="w-16 h-16 rounded-full" src={avatar} alt="Avatar" />
-          <div>
-            <div className="text-xl font-bold text-white">{name}</div>
-          </div>
+    <div className="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+      <div className="flex overflow-hidden relative flex-col grow items-start px-12 py-10 mt-1 min-h-[306px] max-md:px-5 max-md:mt-3 max-md:max-w-full">
+        <img
+          loading="lazy"
+          srcSet="..."
+          className="object-cover absolute inset-0 size-full"
+        />
+        <div className="flex relative gap-5 ml-3.5 text-3xl font-bold leading-8 text-white max-md:ml-2.5">
+          <img
+            loading="lazy"
+            src={avatar}
+            className="shrink-0 border border-white border-solid aspect-square w-[66px]"
+          />
+          <div className="flex-auto my-auto">{name}</div>
         </div>
-        <div className="mt-2 text-black bg-white rounded-lg p-4">
+        <div className="relative justify-center self-stretch px-4 pt-2.5 pb-1 mt-4 text-xl leading-8 rounded shadow-sm bg-zinc-100 text-zinc-700">
           {description}
         </div>
-        <button className="mt-2 bg-cyan-500 text-white font-semibold py-1 px-4 rounded-full hover:bg-cyan-700">
+        <div className="relative justify-center items-start px-8 py-3.5 mt-3.5 max-w-full text-sm font-black leading-5 text-blue-300 whitespace-nowrap bg-teal-500 rounded-3xl w-[136px] max-md:px-5">
           Connects
-        </button>
+        </div>
       </div>
     </div>
   );

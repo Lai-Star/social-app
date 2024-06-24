@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import Chatdetail from '../components/messages/Chatdetail';
 import Chatlist from '../components/messages/Chatlist';
 import Messagebox from '../components/messages/Messagebox';
@@ -8,10 +7,6 @@ import Sidebar from '../components/Sidebar';
 export default function Chat() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
-      <Navbar />
-      {/* End Header */}
-
       {/* Chatting */}
       <div className="flex flex-1 flex-row justify-between bg-white">
         {/* Left Sidebar */}

@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import ProfileHeader from '../components/Profile/ProfileHeader';
 import TabNavigation from '../components/Profile/TabNavigation';
 import AddressSection from '../components/Profile/AddressSection';
@@ -8,7 +7,6 @@ import ActivitiesSection from '../components/Profile/ActivitiesSection';
 export default function Profile() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <div>
         <img />
         <h2 className="color-gray-800 font-bold text-4xl mt-2 ml-10">
