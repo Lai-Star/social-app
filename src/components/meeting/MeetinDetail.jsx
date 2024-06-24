@@ -26,32 +26,32 @@ export default function MeetinDetail() {
             <div className="flex gap-2">
               <img
                 loading="lazy"
-                srcSet="..."
-                className="shrink-0 w-9 aspect-square"
+                srcSet="./img/avatars/11.png"
+                className="shrink-0 w-9 aspect-square rounded-full"
               />
               <div className="flex-auto my-auto">Benjamin Crawford</div>
             </div>
             <div className="flex gap-2 mt-4">
               <img
                 loading="lazy"
-                srcSet="..."
-                className="shrink-0 w-9 aspect-square"
+                srcSet="./img/avatars/9.png"
+                className="shrink-0 w-9 aspect-square rounded-full"
               />
               <div className="flex-auto my-auto">Christian Scott</div>
             </div>
             <div className="flex gap-2 mt-4">
               <img
                 loading="lazy"
-                srcSet="..."
-                className="shrink-0 w-9 aspect-square"
+                srcSet="./img/avatars/10.png"
+                className="shrink-0 w-9 aspect-square rounded-full"
               />
               <div className="flex-auto my-auto">Deborah Chu</div>
             </div>
             <div className="flex gap-2 mt-4">
               <img
                 loading="lazy"
-                srcSet="..."
-                className="shrink-0 w-9 aspect-square"
+                srcSet="./img/avatars/6.png"
+                className="shrink-0 w-9 aspect-square rounded-full"
               />
               <div className="flex-auto my-auto">Jordan Nieves</div>
             </div>
@@ -138,8 +138,8 @@ export default function MeetinDetail() {
         <div className="flex gap-2.5 items-center mt-11">
           <img
             loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch w-9 aspect-square"
+            srcSet="./img/avatars/9.png"
+            className="shrink-0 self-stretch w-9 aspect-square rounded-full"
           />
           <div className="self-stretch my-auto text-sm font-bold leading-5 text-zinc-700">
             Deborah Chu
@@ -154,8 +154,8 @@ export default function MeetinDetail() {
         <div className="flex gap-2.5 items-center mt-6">
           <img
             loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch w-9 aspect-square"
+            srcSet="./img/avatars/6.png"
+            className="shrink-0 self-stretch w-9 aspect-square rounded-full"
           />
           <div className="self-stretch my-auto text-sm font-bold leading-5 text-zinc-700">
             Jordan Nieves
@@ -170,8 +170,8 @@ export default function MeetinDetail() {
         <div className="flex gap-2.5 items-center mt-6">
           <img
             loading="lazy"
-            srcSet="..."
-            className="shrink-0 self-stretch w-9 aspect-square"
+            srcSet="./img/avatars/10.png"
+            className="shrink-0 self-stretch w-9 aspect-square rounded-full"
           />
           <div className="flex-auto self-stretch my-auto text-sm font-bold leading-5 text-zinc-700">
             Benjamin Crawford
@@ -194,7 +194,7 @@ export default function MeetinDetail() {
           </div>
           <img
             loading="lazy"
-            srcSet="..."
+            srcSet="./img/send.png"
             className="shrink-0 my-auto w-7 aspect-square"
           />
         </div>

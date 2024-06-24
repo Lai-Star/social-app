@@ -7,7 +7,7 @@ export default function Chatdetail() {
         <div>Chat details</div>
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4d563a73f1fd4d78529b60b125ac56b79520bf4dee79ddd8212bf0c215a873c?"
+          src="./../img/posting_img/11.jfif"
           className="shrink-0 w-3 aspect-square"
         />
       </div>

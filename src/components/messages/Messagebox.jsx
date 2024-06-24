@@ -14,7 +14,7 @@ export default function Messagebox() {
           {
             align: 'start',
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat at praesentium, aut ullam delectus odio error sit rem. Architecto nulla doloribus laborum illo rem enim dolor odio saepe, consequatur quas?',
-            img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            img: './img/avatars/12.png',
             bg: 'bg-gray-400',
           },
           {
@@ -32,7 +32,7 @@ export default function Messagebox() {
           {
             align: 'start',
             text: 'happy holiday guys!',
-            img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+            img: './img/avatars/12.png',
             bg: 'bg-gray-400',
           },
         ].map((message, index) => (

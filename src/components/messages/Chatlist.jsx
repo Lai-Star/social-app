@@ -20,38 +20,38 @@ export default function Chatlist() {
         {
           name: 'Luis1994',
           message: 'Pick me at 9:00 Am',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/9.png',
         },
         {
           name: 'Everest Trip 2021',
           message: 'Hi Sam, Welcome',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/8.png',
         },
         {
           name: 'MERN Stack',
           message: 'Lusi : Thanks Everyone',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/12.png',
           active: true,
         },
         {
           name: 'Javascript Indonesia',
           message: 'Evan : some one can fix this',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/5.png',
         },
         {
           name: 'Luis1994',
           message: 'Pick me at 9:00 Am',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/1.png',
         },
         {
           name: 'Everest Trip 2021',
           message: 'Hi Sam, Welcome',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/11.png',
         },
         {
           name: 'Luis1994',
           message: 'Pick me at 9:00 Am',
-          img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          img: './img/avatars/10.png',
         },
       ].map((user, index) => (
         <div

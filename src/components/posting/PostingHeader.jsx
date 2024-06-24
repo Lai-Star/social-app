@@ -14,7 +14,7 @@ export default function PostingHeader() {
         <div className="flex gap-5 items-start">
           <img
             loading="lazy"
-            srcSet="..."
+            srcSet="./img/address_image.jfif"
             className="shrink-0 self-start w-5 aspect-[0.95]"
           />
           <img

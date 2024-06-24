@@ -42,7 +42,7 @@ export default function MainScreen() {
         <div className="flex overflow-hidden relative flex-col gap-5 justify-between items-start px-6 pt-6 pb-20 w-full min-h-[469px] max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
           <img
             loading="lazy"
-            srcSet="..."
+            srcSet="./img/video_img/main.png"
             className="object-cover absolute inset-0 size-full"
           />
           <div className="flex relative gap-2 justify-center px-2 py-3 rounded shadow-sm bg-zinc-900 bg-opacity-50">
@@ -63,7 +63,7 @@ export default function MainScreen() {
               <div className="flex overflow-hidden relative flex-col gap-5 justify-between items-start px-2 pt-2.5 pb-20 w-full aspect-[1.63]">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  srcSet="./img/video_img/1.jpg"
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="flex relative gap-2 justify-center px-2 py-2.5 rounded shadow-sm bg-zinc-900 bg-opacity-50">
@@ -83,7 +83,7 @@ export default function MainScreen() {
               <div className="flex overflow-hidden relative flex-col gap-5 justify-between items-start px-2 pt-1.5 pb-20 w-full aspect-[1.63]">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  srcSet="./img/video_img/7.png"
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="flex relative gap-2 justify-center px-2 py-2.5 rounded shadow-sm bg-zinc-900 bg-opacity-50">
@@ -103,7 +103,7 @@ export default function MainScreen() {
               <div className="flex overflow-hidden relative flex-col gap-5 justify-between items-start px-2 pt-1.5 pb-20 w-full aspect-[1.63]">
                 <img
                   loading="lazy"
-                  srcSet="..."
+                  srcSet="./img/video_img/6.png"
                   className="object-cover absolute inset-0 size-full"
                 />
                 <div className="flex relative gap-2 justify-center px-2 py-2.5 rounded shadow-sm bg-zinc-900 bg-opacity-50">
