@@ -1,31 +1,31 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ProfileCard from '../components/home/ProfileCard';
+// import ProfileCard from '../components/home/ProfileCard';
 import LoginCard from '../components/home/LoginCard';
 
-const profiles = [
-  {
-    id: 1,
-    name: 'Ben Goro',
-    description:
-      'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/2.png',
-  },
-  {
-    id: 2,
-    name: 'Jane Doe',
-    description:
-      'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/3.png',
-  },
-  {
-    id: 3,
-    name: 'John Smith',
-    description:
-      'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/6.png',
-  },
-];
+// const profiles = [
+//   {
+//     id: 1,
+//     name: 'Ben Goro',
+//     description:
+//       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
+//     avatar: '/img/avatars/2.png',
+//   },
+//   {
+//     id: 2,
+//     name: 'Jane Doe',
+//     description:
+//       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
+//     avatar: '/img/avatars/3.png',
+//   },
+//   {
+//     id: 3,
+//     name: 'John Smith',
+//     description:
+//       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
+//     avatar: '/img/avatars/6.png',
+//   },
+// ];
 
 export default function FirstPage() {
   const [showLoginCard, setShowLoginCard] = useState(false);
@@ -44,7 +44,7 @@ export default function FirstPage() {
         <div className="flex overflow-hidden relative flex-col py-16 w-full min-h-[1430px] max-md:max-w-full">
           <img
             loading="lazy"
-            srcSet="..."
+            src="../img/home_imgs.webp"
             className="object-cover absolute inset-0 size-full"
           />
           <div className="flex relative flex-col pr-6 pl-20 w-full max-md:px-5 max-md:max-w-full">
@@ -144,14 +144,14 @@ export default function FirstPage() {
           <div className="overflow-hidden relative self-center px-1 py-1.5 mt-12 w-full max-w-[1368px] max-md:mt-10 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               {/* Profile Card */}
-              {profiles.map((profile) => (
+              {/* {profiles.map((profile) => (
                 <ProfileCard
                   key={profile.id}
                   name={profile.name}
                   description={profile.description}
                   avatar={profile.avatar}
                 />
-              ))}
+              ))} */}
               {/* End Profile Card */}
             </div>
           </div>
