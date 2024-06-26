@@ -7,21 +7,21 @@ const profiles = [
     name: 'Ben Goro',
     description:
       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/2.png',
+    avatar: './img/avatars/2.png',
   },
   {
     id: 2,
     name: 'Jane Doe',
     description:
       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/3.png',
+    avatar: './img/avatars/3.png',
   },
   {
     id: 3,
     name: 'John Smith',
     description:
       'Labore proident nisi fugiat nostrud sint mollit aliqua ipsum ad veniam cupidatat',
-    avatar: '/img/avatars/6.png',
+    avatar: './img/avatars/6.png',
   },
 ];
 
@@ -31,7 +31,7 @@ export default function FirstPage() {
       <div className="flex overflow-hidden relative flex-col py-10 h-screen w-full max-md:max-w-full">
         <img
           loading="lazy"
-          src="./img/home_img.webp"
+          src="./img/home_imgs.webp"
           className="object-cover absolute inset-0 size-full"
         />
         {/* Header */}
@@ -40,7 +40,7 @@ export default function FirstPage() {
             <div className="flex gap-4 mt-3.5 text-xl font-bold leading-9 text-white whitespace-nowrap">
               <img
                 loading="lazy"
-                srcSet="../img/logo.WEBP"
+                src="./img/logo.WEBP"
                 className="shrink-0 aspect-square rounded-full w-[40px]"
               />
               <div className="flex-auto my-auto text-white">CawGo</div>

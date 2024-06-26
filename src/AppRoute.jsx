@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound';
 import Payment from './pages/Payment';
 import PostingPicture from './pages/PostingPicture';
 import Layout from './components/Layout';
+import JobPosting from './pages/JobPosting';
 
 const AppRoutes = () => {
   return (
@@ -23,6 +24,7 @@ const AppRoutes = () => {
           <Route path="payment" element={<Payment />} />
           <Route path="posting-picture" element={<PostingPicture />} />
         </Route>
+        <Route path="job-posting" element={<JobPosting />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
