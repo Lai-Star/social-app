@@ -4,7 +4,7 @@ import { faMicrophone, faVideo } from '@fortawesome/free-solid-svg-icons';
 
 export default function MapSidebar() {
   return (
-    <div className="hide-scrollbar absolute bg-opacity-95 top-0 ml-[300px] w-2/7 bg-black overflow-y-scroll z-10 text-white">
+    <div className="hide-scrollbar absolute bg-opacity-95 top-0 ml-[300px] w-2/7 bg-black z-10 text-white">
       <div className="mb-0">
         <div className="mb-4 flex items-center bg-white p-4 rounded shadow">
           <img

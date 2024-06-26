@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import CreditCard from '../components/payment/CreditCard';
 import Checkout from '../components/payment/Checkout';
 import '../styles/CreditCard.css';
 
