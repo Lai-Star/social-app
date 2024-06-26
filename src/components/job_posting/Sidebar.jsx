@@ -47,7 +47,7 @@ export default function Sidebar() {
                 className="w-8 h-8 rounded-full mr-2"
               />
               Location
-              <span className="ml-auto">Canada</span>
+              <sapn className="ml-auto">Canada</sapn>
             </li>
             <li className="mb-5 flex text-xl p-2 bottom-0 left-1/2  border-b-2 border-white">
               <img

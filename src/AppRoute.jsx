@@ -23,9 +23,10 @@ const AppRoutes = () => {
           <Route path="profile" element={<Profile />} />
           <Route path="payment" element={<Payment />} />
           <Route path="posting-picture" element={<PostingPicture />} />
+          <Route path="job-posting" element={<JobPosting />} />
         </Route>
-        <Route path="job-posting" element={<JobPosting />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="job-posting" element={<JobPosting />} />
       </Routes>
     </Router>
   );

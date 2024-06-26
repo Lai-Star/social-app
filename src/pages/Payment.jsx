@@ -1,5 +1,6 @@
 import * as React from 'react';
 import CreditCard from '../components/payment/CreditCard';
+import '../styles/CreditCard.css';
 
 export default function Payment() {
   return (
