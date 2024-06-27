@@ -41,7 +41,7 @@ export default function FirstPage() {
   return (
     <div className="relative">
       <div className="flex flex-col justify-center bg-white blur-none">
-        <div className="flex overflow-hidden relative flex-col py-16 w-full min-h-[1430px] max-md:max-w-full">
+        <div className="flex overflow-hidden relative flex-col py-16 w-full h-[1430px] max-md:max-w-full">
           <img
             loading="lazy"
             src="../img/home_imgs.webp"
@@ -78,7 +78,7 @@ export default function FirstPage() {
           <div className="flex relative flex-col px-7 mt-11 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
             <div className="flex gap-5 justify-between max-md:flex-wrap max-md:pr-5 max-md:max-w-full">
               <div className="flex flex-col max-md:max-w-full float-end">
-                <div className="flex gap-3 items-start pb-9 pl-7 bg-cyan-500 shadow rounded-[122px] max-md:flex-wrap max-md:pl-5 max-md:max-w-full">
+                <div className="flex gap-3 items-start pb-9 pl-7 bg-black bg-opacity-30 shadow rounded-[122px] max-md:flex-wrap max-md:pl-5 max-md:max-w-full">
                   <div className="flex-auto self-start mt-0 max-md:max-w-full">
                     <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                       <div className="flex flex-col w-[54%] max-md:ml-0 max-md:w-full">
@@ -121,22 +121,6 @@ export default function FirstPage() {
               <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                 <div className="flex flex-col w-[37%] max-md:ml-0 max-md:w-full">
                   <div className="flex gap-5 justify-between items-start max-md:mt-10"></div>
-                </div>
-                <div className="flex flex-col ml-5 w-[63%] max-md:ml-0 max-md:w-full">
-                  <div className="grow mt-3.5 max-md:mt-10">
-                    <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-                      <div className="flex flex-col w-[63%] max-md:ml-0 max-md:w-full">
-                        <div className="shrink-0 mx-auto bg-cyan-600 border border-cyan-900 border-solid h-[117px] rounded-[70px] w-[117px] max-md:mt-10" />
-                      </div>
-                      <div className="flex flex-col ml-5 w-[38%] max-md:ml-0 max-md:w-full">
-                        <div className="flex flex-col grow pt-6 mt-32 w-full text-xs text-teal-300 whitespace-nowrap bg-black bg-opacity-0 max-md:mt-10">
-                          <div className="items-start px-12 pt-5 pb-20 bg-cyan-600 border border-cyan-800 border-solid h-[135px] rounded-[70px] w-[135px] max-md:px-5">
-                            Piatiaco
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

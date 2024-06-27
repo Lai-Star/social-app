@@ -9,9 +9,9 @@ export default function Profile() {
     <div className="flex flex-col min-h-screen">
       <div>
         <img />
-        <h2 className="color-gray-800 font-bold text-4xl mt-2 ml-10">
+        {/* <h2 className="color-gray-800 font-bold text-4xl mt-2 ml-10">
           Profile
-        </h2>
+        </h2> */}
       </div>
       <div className="w-full mx-auto p-4 grid grid-cols-3 md:grid-cols-4 gap-4">
         <div className="md:col-span-1">
