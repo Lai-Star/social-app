@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
+import './Particles.css';
+
 // import type { Container, Engine } from "@tsparticles/engine";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
@@ -36,9 +38,10 @@ const ParticlesCom = () => {
           particlesLoaded={particlesLoaded}
           options={{
             background: {
-              color: {
-                value: '#4682B4',
-              },
+              image: 'url(./img/home_imgs.webp)', // Leave this empty, as CSS will handle the background image
+              repeat: 'no-repeat',
+              size: 'cover',
+              position: 'center center',
             },
             fpsLimit: 120,
             interactivity: {
@@ -103,6 +106,7 @@ const ParticlesCom = () => {
             },
             detectRetina: true,
           }}
+          className="particles-container" // Add a class name here
         />
       )}
     </>

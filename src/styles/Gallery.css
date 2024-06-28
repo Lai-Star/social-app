@@ -135,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10vmin;
+  margin: 10vmin auto;
   overflow: hidden;
   transform: skew(5deg);
 }

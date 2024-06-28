@@ -53,13 +53,12 @@ export default function FirstPage() {
       >
         <div className="flex flex-col justify-center blur-none">
           <div className="flex overflow-hidden relative flex-col py-16 w-full h-[1430px] max-md:max-w-full">
-            {/* <Particles /> */}
             <div className="flex relative flex-col pr-6 pl-20 w-full max-md:px-5 max-md:max-w-full">
               <div className="flex gap-5 justify-between items-start w-full max-md:flex-wrap max-md:max-w-full">
                 <div className="flex gap-4 mt-3.5 text-3xl font-bold leading-9 text-white whitespace-nowrap">
                   <img
                     loading="lazy"
-                    srcSet="../img/logo.WEBP"
+                    srcSet="./img/logo.WEBP"
                     className="shrink-0 aspect-square rounded-full w-[63px]"
                   />
                   <div className="flex-auto my-auto text-black">CawGo</div>
