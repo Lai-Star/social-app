@@ -38,10 +38,11 @@ const ParticlesCom = () => {
           particlesLoaded={particlesLoaded}
           options={{
             background: {
-              image: 'url(./img/home_imgs.webp)', // Leave this empty, as CSS will handle the background image
+              image: 'url(./img/home_background.jpg)', // Leave this empty, as CSS will handle the background image
               repeat: 'no-repeat',
               size: 'cover',
               position: 'center center',
+              opacity: 0.6,
             },
             fpsLimit: 120,
             interactivity: {
@@ -74,7 +75,7 @@ const ParticlesCom = () => {
                 color: '#ffffff',
                 distance: 150,
                 enable: true,
-                opacity: 0.5,
+                // opacity: 0.5,
                 width: 1,
               },
               move: {
@@ -95,7 +96,7 @@ const ParticlesCom = () => {
                 value: 80,
               },
               opacity: {
-                value: 0.5,
+                // value: 0.5,
               },
               shape: {
                 type: 'circle',
