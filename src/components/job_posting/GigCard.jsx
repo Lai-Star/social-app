@@ -5,7 +5,7 @@ import '../../styles/GigCard.css';
 
 const GigCard = ({ item, onClick }) => {
   return (
-    <div className="gigCard" onClick={onClick}>
+    <div className="gigCard cursor-pointer" onClick={onClick}>
       <img className="gigImg" src={item.img} alt="" />
       <div className="info">
         <div className="cardUser">

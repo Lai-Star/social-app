@@ -67,7 +67,9 @@ export default function Sidebar({ selectedGig }) {
                 className="w-8 h-8 rounded-full mr-2"
               />
               Start At
-              <span className="ml-auto">{selectedGig.price}$</span>
+              <span className="ml-auto">
+                {selectedGig ? selectedGig.price : 0}$
+              </span>
             </li>
           </ul>
         </div>
