@@ -110,6 +110,9 @@ function Gig() {
                     <span>United States</span>
                   </div>
                 </div>
+                <div className="gigInfo float-right ml-auto">
+                  <span>$100</span>
+                </div>
               </div>
               <div className="gigStars">
                 <img src={star} alt="" />
@@ -141,6 +144,9 @@ function Gig() {
                     />
                     <span>Germany</span>
                   </div>
+                </div>
+                <div className="gigInfo float-right ml-auto">
+                  <span>$100</span>
                 </div>
               </div>
               <div className="gigStars">
@@ -175,6 +181,9 @@ function Gig() {
                     <span>United States</span>
                   </div>
                 </div>
+                <div className="gigInfo float-right ml-auto">
+                  <span>$100</span>
+                </div>
               </div>
               <div className="gigStars">
                 <img src={star} alt="" />
@@ -196,7 +205,7 @@ function Gig() {
         <div className="gigRight">
           <div className="gigPrice">
             <h3>UI/UX Designs</h3>
-            <h2>INR 600</h2>
+            <h2>$150</h2>
           </div>
           <p>
             I will need a unique high quality UI/UX design based on a
