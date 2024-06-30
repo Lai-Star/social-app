@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -17,7 +18,9 @@ export default function Footer() {
       <div className="md:col-span-2 h-full flex items-center justify-around space-x-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
         <div className="text-center">
           <h4 className="text-lg">Profile</h4>
-          <p className="text-gray-400">view details</p>
+          <Link to="/profile" target="_blank" className="link hover:underline">
+            <p className="text-gray-400">view details</p>
+          </Link>
         </div>
         <div className="text-center">
           <h4 className="text-lg">Follow</h4>

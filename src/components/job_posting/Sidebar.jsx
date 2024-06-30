@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Sidebar() {
+export default function Sidebar({ selectedGig }) {
   return (
     <div className="md:col-span-1 flex flex-col bg-opacity-75 h-full">
       <div className="flex bg-gray-700 p-3 w-full">
@@ -15,6 +15,17 @@ export default function Sidebar() {
       <div className="w-full bg-gray-900 text-white bg-opacity-50 p-4 text-left flex-1">
         <div className="text-left p-4">
           <p className="bottom-0 left-1/2  border-b-2 border-white">
+            {selectedGig ? (
+              <div>
+                <h2 className="text-3xl">{selectedGig.desc}</h2>
+              </div>
+            ) : (
+              <div className="text-left p-4">
+                <p className="bottom-0 left-1/2  border-b-2 border-white">
+                  No gig selected.
+                </p>
+              </div>
+            )}
             n need of a math tutor for high school level. Please reach out if
             interested.In need of a math tutor for high school level. Please
             reach out if interested.In need of a math tutor for high school
@@ -55,16 +66,16 @@ export default function Sidebar() {
                 srcSet="./../img/bonus.png"
                 className="w-8 h-8 rounded-full mr-2"
               />
-              Bonus
-              <span className="ml-auto">150$</span>
+              Start At
+              <span className="ml-auto">{selectedGig.price}$</span>
             </li>
           </ul>
         </div>
         <div className="p-8">
           <ul className="mt-2 text-xl">
-            <li className="p-2">Time Range</li>
-            <li className="p-2">Time Range</li>
-            <li className="p-2">Time Range</li>
+            <li className="p-2"></li>
+            <li className="p-2"></li>
+            <li className="p-2"></li>
           </ul>
         </div>
         <div>

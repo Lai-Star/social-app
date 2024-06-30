@@ -4,7 +4,7 @@ import GigCard from './GigCard';
 import '../../styles/Feedpart.css';
 import downIcon from '../../assets/down.png';
 
-export default function FeedPart() {
+export default function FeedPart({ setSelectedGig }) {
   const [sort, setSort] = useState('sales');
   const [open, setOpen] = useState(false);
   const minRef = useRef();
@@ -56,7 +56,11 @@ export default function FeedPart() {
         </div>
         <div className="cards">
           {gigs.map((gig) => (
-            <GigCard key={gig.id} item={gig} />
+            <GigCard
+              key={gig.id}
+              item={gig}
+              onClick={() => setSelectedGig(gig)}
+            />
           ))}
         </div>
       </div>

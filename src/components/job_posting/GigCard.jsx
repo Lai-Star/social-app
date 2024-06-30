@@ -3,16 +3,22 @@ import { Link } from 'react-router-dom';
 import starImg from '../../assets/star.png';
 import '../../styles/GigCard.css';
 
-const GigCard = ({ item }) => {
+const GigCard = ({ item, onClick }) => {
   return (
-    <div className="gigCard">
+    <div className="gigCard" onClick={onClick}>
       <img className="gigImg" src={item.img} alt="" />
       <div className="info">
         <div className="cardUser">
           <img src={item.pp} alt="" />
           <div className="flex justify-around mt-2">
-            <span>{item.username}</span>
-            <Link to="/map" className="link hover:underline">
+            <Link
+              to="/profile"
+              target="_blank"
+              className="link hover:underline"
+            >
+              <span>{item.username}</span>
+            </Link>
+            <Link to="/map" target="_blank" className="link hover:underline">
               <div className="country">
                 <img
                   src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
@@ -23,7 +29,11 @@ const GigCard = ({ item }) => {
             </Link>
           </div>
         </div>
-        <Link to="/job-posting/123" className="link hover:underline">
+        <Link
+          to="/job-posting/123"
+          target="_blank"
+          className="link hover:underline"
+        >
           <p className="text-black">{item.desc}</p>
         </Link>
         <div className="star">

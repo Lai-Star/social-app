@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/Gig.css';
 import clock from '../../assets/clock.png';
 import recycle from '../../assets/recycle.png';
@@ -101,7 +102,13 @@ function Gig() {
                   alt=""
                 />
                 <div className="gigInfo">
-                  <span>Garner David</span>
+                  <Link
+                    to="/profile"
+                    target="_blank"
+                    className="link hover:underline"
+                  >
+                    <span>Garner David</span>
+                  </Link>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"
@@ -136,7 +143,13 @@ function Gig() {
                   alt=""
                 />
                 <div className="gigInfo">
-                  <span>Sidney Owen</span>
+                  <Link
+                    to="/profile"
+                    target="_blank"
+                    className="link hover:underline"
+                  >
+                    <span>Sidney Owen</span>
+                  </Link>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1e9-1f1ea.png"
@@ -172,7 +185,13 @@ function Gig() {
                   alt=""
                 />
                 <div className="gigInfo">
-                  <span>Lyle Giles </span>
+                  <Link
+                    to="/profile"
+                    target="_blank"
+                    className="link hover:underline"
+                  >
+                    <span>Lyle Giles </span>
+                  </Link>
                   <div className="country">
                     <img
                       src="https://fiverr-dev-res.cloudinary.com/general_assets/flags/1f1fa-1f1f8.png"

@@ -75,6 +75,7 @@ export default function JobPosting() {
   const [editorState, setEditorState] = React.useState(
     MUIEditorState.createEmpty()
   );
+  const [selectedGig, setSelectedGig] = useState(null);
   
   const timelineTypeChange = (event) => {
     setTimelineType(event.target.value);
@@ -337,11 +338,11 @@ export default function JobPosting() {
         <div className="relative w-full">
           <div className="w-full">
             <div className="model w-full grid grid-cols-3 md:grid-cols-3">
-              <Sidebar />
+              <Sidebar selectedGig={selectedGig} />
               <div className="md:col-span-2 flex flex-col bg-opacity-75 bg-black">
                 <Navbar setShowFeed={setShowFeed} handleClickOpen={handleClickOpen} />{' '}
                 {/* Pass the state setter to Navbar */}
-                {showFeed ? <FeedPart /> : <ListFeed />}
+                {showFeed ? <FeedPart setSelectedGig={setSelectedGig} /> : <ListFeed />}
               </div>
             </div>
             <Footer />
