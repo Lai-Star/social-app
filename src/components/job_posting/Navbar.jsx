@@ -2,27 +2,53 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Button, Grid } from '@mui/material';
+import AppsIcon from '@mui/icons-material/Apps';
+import NoteAddIcon from '@mui/icons-material/NoteAdd';
+import DensitySmallIcon from '@mui/icons-material/DensitySmall';
 
-export default function Navbar({ setShowFeed }) {
+export default function Navbar({ setShowFeed, handleClickOpen }) {
   return (
     <>
       <nav className="w-full grid grid-cols-3 md:grid-cols-8 flex-col bg-gray-900 text-white p-2 flex justify-between items-center">
-        <div className="items-center col-span-4">
-          <h1 className="text-2xl font-bold">CawGo</h1>
+        <div className="flex items-center ml-auto col-span-4">
+          <Grid gap={2} display={'flex'} md={9}>
+            <Button
+              onClick={handleClickOpen}
+              variant="contained"
+              startIcon={<NoteAddIcon />}
+            >
+              Post Job
+            </Button>
+            <Button
+              variant="contained"
+              sx={{
+                '& span': {
+                  padding: '0',
+                  margin: '0',
+                },
+              }}
+              startIcon={<AppsIcon />}
+              onClick={() => {
+                setShowFeed(true);
+              }}
+            ></Button>
+            <Button
+              variant="contained"
+              sx={{
+                '& span': {
+                  padding: '0',
+                  margin: '0',
+                },
+              }}
+              startIcon={<DensitySmallIcon />}
+              onClick={() => {
+                setShowFeed(false);
+              }}
+            ></Button>
+          </Grid>
         </div>
-        <div className="flex items-center ml-auto col-span-2">
-          <img
-            src="./img/list2.png"
-            className="h-8 w-8 mr-3"
-            onClick={() => setShowFeed(true)} // onClick event to show FeedPart
-          />
-          <img
-            src="./img/list3.png"
-            className="h-8 w-8 mr-3"
-            onClick={() => setShowFeed(false)} // onClick event to show JobList
-          />
-        </div>
-        <div className="flex items-center relative ml-auto col-span-2">
+        <div className="flex items-end relative ml-auto col-span-4">
           <input
             type="text"
             placeholder="Search"
