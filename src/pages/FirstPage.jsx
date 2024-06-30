@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ParticlesCom from './Particles';
-// import FormContainer from '../components/home/FormContainer';
+import FormContainer from '../components/home/FormContainer';
 
 export default function FirstPage() {
   const [showLoginCard, setShowLoginCard] = useState(false);
@@ -123,15 +123,15 @@ export default function FirstPage() {
                 animate={{ rotateY: 0, opacity: 1 }}
                 exit={{ rotateY: 90, opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="relative bg-white rounded-lg shadow-lg p-8 max-w-sm lg:max-w-4xl w-full"
+                // className="relative bg-white rounded-lg shadow-lg p-8 max-w-sm lg:max-w-4xl w-full"
               >
                 <button
-                  className="absolute top-2 right-2 text-gray-600 hover:text-gray-900"
+                  className="absolute top-2 right-2 text-gray-600 hover:text-gray-900 top-50"
                   onClick={handleCloseLoginCard}
                 >
                   &times;
                 </button>
-                {/* <FormContainer /> */}
+                <FormContainer />
               </motion.div>
             </motion.div>
           )}
