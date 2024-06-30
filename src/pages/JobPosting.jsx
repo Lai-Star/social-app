@@ -338,7 +338,7 @@ export default function JobPosting() {
           <div className="w-full">
             <div className="model w-full grid grid-cols-3 md:grid-cols-3">
               <Sidebar />
-              <div className="md:col-span-2 flex flex-col bg-opacity-75 bg-white">
+              <div className="md:col-span-2 flex flex-col bg-opacity-75 bg-black">
                 <Navbar setShowFeed={setShowFeed} handleClickOpen={handleClickOpen} />{' '}
                 {/* Pass the state setter to Navbar */}
                 {showFeed ? <FeedPart /> : <ListFeed />}

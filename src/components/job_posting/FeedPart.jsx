@@ -1,82 +1,65 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import { gigs } from '../../data/data';
+import GigCard from './GigCard';
+import '../../styles/Feedpart.css';
+import downIcon from '../../assets/down.png';
 
 export default function FeedPart() {
+  const [sort, setSort] = useState('sales');
+  const [open, setOpen] = useState(false);
+  const minRef = useRef();
+  const maxRef = useRef();
+
+  const reSort = (type) => {
+    setSort(type);
+    setOpen(false);
+  };
+
+  const apply = () => {
+    console.log(minRef.current.value);
+    console.log(maxRef.current.value);
+  };
+
   return (
-    <>
-      <div className="flex-1 p-4">
-        <div className="grid grid-cols-2 gap-1">
-          <div className="relative bg-gray-900 text-white">
-            <img
-              src="./../img/bicycle2.jfif"
-              alt="Item"
-              className="w-full h-64 object-cover"
-            />
-            <div className=" w-full p-4 bg-black bg-opacity-75">
-              <h2 className="text-xl font-bold">Item for Sale: Bicycle</h2>
-              <p className="h-[80px]">
-                In need of a math tutor for high school level. Please reach out
-                if interested... In need of a math tutor for high school level.
-                Please reach out if
-              </p>
-              <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded">
-                Comment
-              </button>
-            </div>
-          </div>
-          <div className="relative bg-gray-900 text-white">
-            <img
-              src="./../img/bicycle.jpg"
-              alt="Item"
-              className="w-full h-64 object-cover"
-            />
-            <div className=" w-full p-4 bg-black bg-opacity-75">
-              <h2 className="text-xl font-bold">Item for Sale: Bicycle</h2>
-              <p className="h-[80px]">
-                In need of a math tutor for high school level. Please reach out
-                if interested... In need of a math tutor for high school level.
-                Please reach out if
-              </p>
-              <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded">
-                Comment
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="m-4 text-left shadow-md overflow-hidden">
-        <div className="p-4">
-          <h2 className="text-2xl font-bold">Item for Sale: Bicycle</h2>
-        </div>
-        <div className="relative">
-          <img
-            src="./../img/bicycle3.jpg"
-            alt="Item"
-            className="w-full h-[500px] object-cover"
-          />
-        </div>
-        <div className="p-4">
-          <div className="flex justify-between items-center mt-4">
-            <h2 className="text-2xl font-bold">Item for Sale: Bicycle</h2>
-            <span className="text-2xl font-bold">$150</span>
-          </div>
-          <p className="text-gray-700 mt-4">
-            In need of a math tutor for high school level. Please reach out if
-            interested. In need of a math tutor for high school level. Please
-            reach out if interested. In need of a math tutor for high school
-            level. Please reach out if interested. In need of a math tutor for
-            high school level. Please reach out if interested. In need of a math
-            tutor for high school level. Please reach out if interested. In need
-            of a math tutor for high school level. Please reach out if
-            interested. In need of a math tutor for high school level. Please
-            reach out if interested.
-          </p>
-          <div className="flex mt-4 space-x-4">
-            <button className="bg-orange-500 text-white px-4 py-2 rounded">
-              Comment
+    <div className="gigs">
+      <div className="gigsContainer">
+        <div className="menu">
+          <div className="left">
+            <span className="text-white">Budget</span>
+            <input ref={minRef} type="number" placeholder="min" />
+            <input ref={maxRef} type="number" placeholder="max" />
+            <button className="budgetbutton" onClick={apply}>
+              Apply
             </button>
           </div>
+          <div className="right">
+            <span className="text-white">Sort by :</span>
+            <span
+              className="sortType text-white"
+              onClick={() => setOpen(!open)}
+            >
+              {sort === 'sales' ? 'Best Selling' : 'Newest'}
+
+              <img src={downIcon} alt="" onClick={() => setOpen(!open)} />
+            </span>
+            {open && (
+              <div className="rightMenu">
+                {sort === 'sales' ? (
+                  <span onClick={() => reSort('createdAt')}>Newest</span>
+                ) : (
+                  <span onClick={() => reSort('sales')}>Best Selling</span>
+                )}
+                <span onClick={() => reSort('sales')}>Popular</span>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="cards">
+          {gigs.map((gig) => (
+            <GigCard key={gig.id} item={gig} />
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

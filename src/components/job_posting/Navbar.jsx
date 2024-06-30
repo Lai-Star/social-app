@@ -33,7 +33,7 @@ export default function Navbar({ setShowFeed, handleClickOpen }) {
                 setShowFeed(true);
               }}
             ></Button>
-            <Button
+            {/* <Button
               variant="contained"
               sx={{
                 '& span': {
@@ -45,7 +45,7 @@ export default function Navbar({ setShowFeed, handleClickOpen }) {
               onClick={() => {
                 setShowFeed(false);
               }}
-            ></Button>
+            ></Button> */}
           </Grid>
         </div>
         <div className="flex items-end relative ml-auto col-span-4">
