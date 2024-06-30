@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SignUp.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const FormContainer = () => {
   const [isSignup, setIsSignup] = useState(false);
@@ -32,16 +33,36 @@ const FormContainer = () => {
         <div className="social-media">
           <ul>
             <li>
-              <img src="images/facebook.png" alt="Facebook" />
+              <a
+                href="#"
+                className="text-white hover:text-blue-500 transition duration-200 m-2"
+              >
+                <i className="fab fa-facebook fa-lg"></i>
+              </a>
             </li>
             <li>
-              <img src="images/twitter.png" alt="Twitter" />
+              <a
+                href="#"
+                className="text-white hover:text-blue-400 transition duration-200 m-2"
+              >
+                <i className="fab fa-twitter fa-lg"></i>
+              </a>
             </li>
             <li>
-              <img src="images/linkedin.png" alt="LinkedIn" />
+              <a
+                href="#"
+                className="text-white hover:text-blue-700 transition duration-200 m-2"
+              >
+                <i className="fab fa-linkedin fa-lg"></i>
+              </a>
             </li>
             <li>
-              <img src="images/instagram.png" alt="Instagram" />
+              <a
+                href="#"
+                className="text-white hover:text-pink-600 transition duration-200 m-2"
+              >
+                <i className="fab fa-instagram fa-lg"></i>
+              </a>
             </li>
           </ul>
         </div>

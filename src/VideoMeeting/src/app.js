@@ -10,8 +10,6 @@ let favicon = require('serve-favicon');
 // const cors = require('cors');
 // require('dotenv').config();
 
-const port = process.env.PORT || 5000;
-
 // app.use(cors());
 
 app.use(favicon(path.join(__dirname, 'favicon.ico')));
@@ -38,7 +36,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 // app.use('/posts', require('./routes/posts'));
 // app.use('/comments', require('./routes/comments'));
 
-app.get('/', (req, res) => {
+app.get('/chat', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
 

@@ -29,7 +29,7 @@ const AppRoutes = () => {
           <Route path="job-posting/:id" element={<Gig />} />
           <Route path="video-meeting" element={<VideoMeeting />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="job-posting" element={<JobPosting />} />
       </Routes>
     </Router>

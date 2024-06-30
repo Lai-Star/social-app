@@ -26,18 +26,21 @@ export default function FirstPage() {
         }}
       >
         <div className="flex flex-col justify-center blur-none">
-          <div className="flex overflow-hidden relative flex-col py-16 w-full h-[1430px] max-md:max-w-full">
+          <div className="flex overflow-hidden relative flex-col py-5 w-full h-[1430px] max-md:max-w-full">
             <div className="flex relative flex-col pr-6 pl-20 w-full max-md:px-5 max-md:max-w-full">
               <div className="flex gap-5 justify-between items-start w-full max-md:flex-wrap max-md:max-w-full">
-                <div className="flex gap-4 mt-3.5 text-3xl font-bold leading-9 text-white whitespace-nowrap">
+                <div className="flex gap-4 mt-3.5 text-2xl font-bold leading-9 text-white whitespace-nowrap">
                   <img
                     loading="lazy"
-                    srcSet="./img/logo.WEBP"
-                    className="shrink-0 aspect-square rounded-full w-[63px]"
+                    srcSet="./img/logo2.webp"
+                    className="shrink-0 aspect-square w-[60px] h-[60px]"
                   />
-                  <div className="flex-auto my-auto text-black">CawGo</div>
+                  <div className="flex-auto my-auto font-serif text-white">
+                    CawGo
+                  </div>
                 </div>
-                <div className="flex gap-3 text-2xl leading-10 text-teal-200 max-md:flex-wrap">
+
+                <div className="flex gap-3 text-2xl leading-10 text-teal-200 mt-7 max-md:flex-wrap">
                   <div className="flex gap-2 px-6 whitespace-nowrap bg-cyan-500 rounded-[54px] size-10 w-[150px] mr-10 text-center">
                     <button className="flex my-auto" onClick={handleLoginClick}>
                       LOGIN
