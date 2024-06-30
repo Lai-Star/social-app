@@ -3,7 +3,7 @@ import Sidebar from '../components/job_posting/Sidebar';
 import FeedPart from '../components/job_posting/FeedPart';
 import Footer from '../components/job_posting/Footer';
 import Navbar from '../components/job_posting/Navbar';
-import JobLists from '../components/job_posting/JobLists'; // Ensure the path is correct
+import ListFeed from '../components/job_posting/ListFeed';
 
 export default function JobPosting() {
   const [showFeed, setShowFeed] = useState(true); // state to toggle between components
@@ -23,7 +23,7 @@ export default function JobPosting() {
               <div className="md:col-span-2 flex flex-col bg-opacity-75 bg-white">
                 <Navbar setShowFeed={setShowFeed} />{' '}
                 {/* Pass the state setter to Navbar */}
-                {showFeed ? <FeedPart /> : <JobLists />}
+                {showFeed ? <FeedPart /> : <ListFeed />}
               </div>
             </div>
             <Footer />
