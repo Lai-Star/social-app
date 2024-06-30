@@ -38,19 +38,10 @@ export default function FirstPage() {
                   <div className="flex-auto my-auto text-black">CawGo</div>
                 </div>
                 <div className="flex gap-3 text-2xl leading-10 text-teal-200 max-md:flex-wrap">
-                  <div className="flex gap-2 px-6 whitespace-nowrap bg-cyan-500 rounded-[54px]">
+                  <div className="flex gap-2 px-6 whitespace-nowrap bg-cyan-500 rounded-[54px] size-10 w-[150px] mr-10 text-center">
                     <button className="flex my-auto" onClick={handleLoginClick}>
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a0993de91e2aab2d29bce5e9300ac832502cfecf92b5228a60d1aaec9b775d9?"
-                        className="ml-0 p shrink-0 w-12 aspect-[1.05]"
-                      />
                       LOGIN
                     </button>
-                  </div>
-
-                  <div className="justify-center px-10 py-3 my-auto bg-orange-500 rounded shadow-sm rounded-[54px] max-md:px-5">
-                    <button>SIGN UP</button>
                   </div>
                 </div>
               </div>
